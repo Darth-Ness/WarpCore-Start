@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="https://AquaCSS.darth-ness.repl.co/themes/Comet.css">
+<link rel="stylesheet" href="local.css">
+<center><div class="card">
+    <h1>This is a home page designed specifically for NineTails!</h1>
+    <h3>The theme was designed to fit in with NineTails UI</h3>
+</div>
+Search the web with DuckDuckGo...<br>
+<input id="myInput"></input>
+</center>
+<div class="card sidebar left">
+    <h2>Bookmarks</h2>
+    <a href="https://scratch.mit.edu/"><h4>Scratch</h4></a>
+    <a href="https://www.youtube.com"><h4>Youtube</h4></a>
+    <a href="https://github.com/"><h4>GitHub</h4></a>
+    <a href="https://replit.com/"><h4>Replit</h4></a>
+</div>
+
+<script>
+    var input = document.getElementById("myInput");
+    input.addEventListener("keyup", function(event) {
+        if (event.keyCode === 13) {
+            event.preventDefault();
+            window.location.href = "https://duckduckgo.com/" + myInput.value
+  }
+});
+</script>
