@@ -18,7 +18,7 @@
 
 </div>
 <script>
-    input.addEventListener("keyup", function(event) {
+    document.getElementById("myInput").addEventListener("keyup", function(event) {
         if (event.keyCode === 13) {
             window.location.href = "https://swisscows.com/web?query=" + document.getElementById("myInput").value
         }
