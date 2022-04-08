@@ -1,18 +1,22 @@
 <link rel="stylesheet" href="https://AquaCSS.darth-ness.repl.co/themes/Nord.css">
 <div class="card">
-    <h2>Bookmarks</h2>
     <a href="https://scratch.mit.edu/"><h4>Scratch</h4></a>
+</div>
+
+<div class="card">
     <a href="https://github.com/"><h4>GitHub</h4></a>
+</div>
+
+<div class="card">
     <a href="https://replit.com/"><h4>Replit</h4></a>
 </div>
 
 <input placeholder="Search the web with Swisscows..." id="myInput"></input>
 
 <script>
-    var input = document.getElementById("myInput");
     input.addEventListener("keyup", function(event) {
         if (event.keyCode === 13) {
-            window.location.href = "https://swisscows.com/" + myInput.value
-  }
+            window.location.href = "https://swisscows.com/web?query=" + document.getElementById("myInput").value
+        }
 });
 </script>
